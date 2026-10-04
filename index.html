@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 6 Months Anniversary! ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating Background Hearts -->
+  <div class="hearts-container">
+    <div class="heart">❤️</div>
+    <div class="heart">✨</div>
+    <div class="heart">💖</div>
+    <div class="heart">💕</div>
+    <div class="heart">🌸</div>
+  </div>
+
+  <div class="container">
+    <!-- Main Photo at the Front -->
+    <div class="photo-card">
+      <img src="image.jpg" alt="Our Special Photo" id="main-photo" />
+    </div>
+
+    <h1>Happy Anniversary,<br><span id="partner-name">My Lovely Psycho</span>!</h1>
+    <p class="subtitle">Celebrating 6 Months of amazing memories together ✨</p>
+
+    <!-- Timer Card -->
+    <div class="card pulse-card">
+      <h2>Time Spent Together ✨</h2>
+      <div id="timer">Loading...</div>
+    </div>
+
+    <!-- Note Card -->
+    <div class="card note-card">
+      <p id="note-text" class="fade-in">click below any button babe and see !💕</p>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="button-group">
+      <button class="btn btn-memory" onclick="showMemory()">Favorite Memory 📸</button>
+      <button class="btn btn-reason" onclick="showReason()">Why I Love You 💖</button>
+    </div>
+
+    <button class="btn btn-surprise" onclick="showSurprise()">Click for Final Surprise 🎉</button>
+
+    <!-- Audio Player -->
+    <div class="music-player">
+      <audio id="bg-music" loop autoplay>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <button id="music-btn" class="btn-music" onclick="toggleMusic()">🔊 Playing Our Song</button>
+    </div>
+  </div>
+
+  <!-- Animated Modal Popup -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeSurprise()">&times;</span>
+      <h2>Happy 6 Months Anniversary! 🥂❤️</h2>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
